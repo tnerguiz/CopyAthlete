@@ -34,8 +34,9 @@ const toggleDevice = (device) => {
   if (['android', 'ios'].includes(device)) {
     // If Windows is selected, only allow selecting one mobile device
     if (selectedDevices.includes('windows')) {
-      // If this mobile device is already selected, do nothing
+      // If this mobile device is already selected, deselect it
       if (selectedDevices.includes(device)) {
+        setSelectedDevices(['windows']);
         return;
       }
 
