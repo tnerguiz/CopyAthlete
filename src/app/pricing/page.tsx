@@ -222,8 +222,26 @@ const toggleDevice = (device) => {
               <p className="text-green-700">
                 Your purchase of the Windows version includes a mobile version at no extra cost! You can use it yourself or share with a friend.
               </p>
+              <div className="mt-3 bg-white rounded p-3 border border-green-100">
+                <h4 className="font-medium text-green-800 mb-1">What you get:</h4>
+                <ul className="text-sm text-green-700">
+                  <li className="flex items-center mb-1">
+                    <svg className="w-4 h-4 mr-1 text-green-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                    </svg>
+                    Full Windows version with all features
+                  </li>
+                  <li className="flex items-center">
+                    <svg className="w-4 h-4 mr-1 text-green-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                    </svg>
+                    One mobile version (Android or iOS) at no extra cost
+                  </li>
+                </ul>
+              </div>
             </div>
           )}
+
 
           <div className="bg-white rounded-lg shadow-md overflow-hidden p-6">
             <div className="flex justify-between items-center mb-4">
@@ -248,26 +266,26 @@ const toggleDevice = (device) => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
-
+      
           <div className="space-y-6">
             <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-bold mb-3">Can I use the app on multiple devices?</h3>
+              <h3 className="text-xl font-bold mb-3">How does the bundle pricing work?</h3>
               <p className="text-gray-600">
-                When you purchase the Windows version, you get one mobile version (Android or iOS) included at no extra
-                cost! You can use both yourself or share the mobile version with a friend. If you want to use
-                CopyAthlete on additional devices, you'll need to purchase those separately.
+                When you purchase the Windows version of CopyAthlete for $29.99, you get one mobile version (Android or iOS) included at no extra
+                cost! You can use both yourself or share the mobile version with a friend. This gives you more flexibility
+                in how you use the app and provides better value compared to purchasing each device separately.
               </p>
             </div>
-
-
+      
             <div className="bg-gray-50 rounded-lg p-6">
               <h3 className="text-xl font-bold mb-3">Can I use the app on multiple devices?</h3>
               <p className="text-gray-600">
-                You need to purchase a license for each type of device you want to use. For example, if you want to use
-                CopyAthlete on both your Windows computer and Android phone, you would need to purchase both options.
+                Yes! With our bundle pricing, when you purchase the Windows version, you get one mobile version (Android or iOS) included at no extra
+                cost. You can use both yourself or share the mobile version with a friend. If you want to use
+                CopyAthlete on additional devices beyond what's included in your bundle, you'll need to purchase those separately.
               </p>
             </div>
-
+      
             <div className="bg-gray-50 rounded-lg p-6">
               <h3 className="text-xl font-bold mb-3">When will other sports and coaches be available?</h3>
               <p className="text-gray-600">
@@ -275,7 +293,7 @@ const toggleDevice = (device) => {
                 able to purchase them separately.
               </p>
             </div>
-
+      
             <div className="bg-gray-50 rounded-lg p-6">
               <h3 className="text-xl font-bold mb-3">What if I need help using the app?</h3>
               <p className="text-gray-600">
