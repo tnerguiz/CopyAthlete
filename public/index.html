@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CopyAthlete</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app-header">
+            <h1>CopyAthlete</h1>
+            <p>Compare your technique with world-class athletes</p>
+        </div>
+        
+        <div class="main-menu">
+            <button id="select-coach-video" class="menu-button">Select a Coach Video</button>
+            <button id="record-new-video" class="menu-button">Record New Video</button>
+            <button id="browse-video" class="menu-button">Browse for Your Video</button>
+            <button id="compare-videos" class="menu-button" disabled>Compare Videos</button>
+        </div>
+        
+        <div class="status-area">
+            <div class="video-status">
+                <p>Coach Video: <span id="coach-video-status">Not selected</span></p>
+                <p>Your Video: <span id="user-video-status">Not selected</span></p>
+            </div>
+        </div>
+        
+        <div id="recording-area" class="recording-area hidden">
+            <video id="camera-preview" autoplay muted></video>
+            <div class="recording-controls">
+                <button id="start-recording" class="control-button">Record</button>
+                <button id="stop-recording" class="control-button" disabled>Stop Recording</button>
+                <button id="cancel-recording" class="control-button">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
