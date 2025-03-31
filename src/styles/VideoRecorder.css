@@ -1,0 +1,64 @@
+.recording-area {
+  background-color: #34495e;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recording-area video {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background-color: black;
+}
+
+.recording-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+#start-recording {
+  background-color: #2ecc71;
+  color: white;
+}
+
+#start-recording:hover {
+  background-color: #27ae60;
+}
+
+#stop-recording {
+  background-color: #e74c3c;
+  color: white;
+}
+
+#stop-recording:hover {
+  background-color: #c0392b;
+}
+
+#cancel-recording {
+  background-color: #7f8c8d;
+  color: white;
+}
+
+#cancel-recording:hover {
+  background-color: #6c7a7d;
+}
+
+.control-button {
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  min-width: 100px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}

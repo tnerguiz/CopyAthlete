@@ -1,0 +1,162 @@
+/* src/styles/HelpPage.css */
+.help-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.help-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.help-header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #666;
+}
+
+.close-button:hover {
+  color: #333;
+}
+
+.help-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.help-sidebar {
+  width: 220px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #e9ecef;
+  overflow-y: auto;
+}
+
+.help-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.help-sidebar li {
+  padding: 15px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #e9ecef;
+  transition: background-color 0.2s;
+}
+
+.help-sidebar li:hover {
+  background-color: #e9ecef;
+}
+
+.help-sidebar li.active {
+  background-color: #e9ecef;
+  border-left: 4px solid #007bff;
+  font-weight: bold;
+}
+
+.help-main {
+  flex: 1;
+  padding: 20px 30px;
+  overflow-y: auto;
+}
+
+.help-main h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e9ecef;
+  color: #333;
+}
+
+.help-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.help-section p {
+  line-height: 1.6;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.help-section h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.help-image-container, .help-video-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.help-image, .help-video {
+  max-width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption, .video-caption {
+  margin-top: 8px;
+  font-style: italic;
+  color: #666;
+  font-size: 14px;
+}
+
+.help-steps, .help-list {
+  margin: 15px 0;
+  padding-left: 25px;
+}
+
+.help-steps li, .help-list li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .help-content {
+    flex-direction: column;
+  }
+
+  .help-sidebar {
+    width: 100%;
+    max-height: 200px;
+  }
+
+  .help-sidebar ul {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .help-sidebar li {
+    white-space: nowrap;
+    border-bottom: none;
+    border-right: 1px solid #e9ecef;
+  }
+
+  .help-sidebar li.active {
+    border-left: none;
+    border-bottom: 4px solid #007bff;
+  }
+}

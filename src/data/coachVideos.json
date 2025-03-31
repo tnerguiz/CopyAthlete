@@ -1,0 +1,71 @@
+{
+  "categories": [
+    {
+      "id": "track",
+      "name": "Track & Field",
+      "description": "Running and jumping techniques",
+      "subcategories": [
+        {
+          "id": "sprinting",
+          "name": "Sprinting",
+          "description": "Sprint technique and form",
+          "videos": [
+            {
+              "id": "chelimo_sprint",
+              "name": "Paul Chelimo - Sprint Technique",
+              "description": "Olympic medalist demonstrates proper sprint form",
+              "path": "assets/coaches/paul_chelimo/sprint.mp4",
+              "thumbnail": "assets/coaches/paul_chelimo/thumbnails/sprint.jpg",
+              "duration": 45,
+              "keyPoints": ["Arm movement", "Foot strike", "Body position"]
+            },
+            {
+              "id": "chelimo_start",
+              "name": "Paul Chelimo - Starting Position",
+              "description": "Proper starting position for sprints",
+              "path": "assets/coaches/paul_chelimo/start.mp4",
+              "thumbnail": "assets/coaches/paul_chelimo/thumbnails/start.jpg",
+              "duration": 30,
+              "keyPoints": ["Block position", "Initial drive", "Acceleration phase"]
+            }
+          ]
+        },
+        {
+          "id": "distance",
+          "name": "Distance Running",
+          "description": "Long-distance running techniques",
+          "videos": [
+            {
+              "id": "chelimo_distance",
+              "name": "Paul Chelimo - Distance Running Form",
+              "description": "Efficient form for long-distance running",
+              "path": "assets/coaches/paul_chelimo/distance.mp4",
+              "thumbnail": "assets/coaches/paul_chelimo/thumbnails/distance.jpg",
+              "duration": 60,
+              "keyPoints": ["Energy conservation", "Breathing technique", "Stride length"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soccer",
+      "name": "Soccer",
+      "description": "Soccer techniques and skills",
+      "subcategories": [
+        {
+          "id": "dribbling",
+          "name": "Dribbling",
+          "description": "Ball control and dribbling techniques",
+          "videos": []
+        },
+        {
+          "id": "shooting",
+          "name": "Shooting",
+          "description": "Shooting and goal scoring techniques",
+          "videos": []
+        }
+      ]
+    }
+  ]
+}

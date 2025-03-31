@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Comparison - CopyAthlete</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="comparison-container">
+        <div class="video-container">
+            <div class="video-box">
+                <div class="video-title">Coach Video</div>
+                <video id="coach-video" controls></video>
+                <div class="speed-control">
+                    Speed: 
+                    <select id="coach-speed">
+                        <option value="0.25">0.25x</option>
+                        <option value="0.5">0.5x</option>
+                        <option value="0.75">0.75x</option>
+                        <option value="1" selected>1.0x</option>
+                    </select>
+                </div>
+            </div>
+            <div class="video-box">
+                <div class="video-title">My Video</div>
+                <video id="user-video" controls></video>
+                <div class="speed-control">
+                    Speed: 
+                    <select id="user-speed">
+                        <option value="0.25">0.25x</option>
+                        <option value="0.5">0.5x</option>
+                        <option value="0.75">0.75x</option>
+                        <option value="1" selected>1.0x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls-container">
+            <div class="flip-controls">
+                <button id="flip-left-video" class="flip-button">Flip Left Video</button>
+                <button id="flip-right-video" class="flip-button">Flip Right Video</button>
+            </div>
+            
+            <div class="playback-controls">
+                <button id="prev-frame" class="control-button">◀◀</button>
+                <button id="play-pause" class="control-button">▶</button>
+                <button id="next-frame" class="control-button">▶▶</button>
+            </div>
+            
+            <div class="timeline-container">
+                <span id="current-time" class="timeline-time">0:00</span>
+                <div id="timeline" class="timeline">
+                    <div id="timeline-progress" class="timeline-progress"></div>
+                    <div id="timeline-handle" class="timeline-handle"></div>
+                </div>
+                <span id="total-time" class="timeline-time">0:00</span>
+            </div>
+            
+            <div class="feature-controls">
+                <button id="toggle-tracking" class="feature-button">Enable Joint Tracking</button>
+                <button id="back-to-menu" class="feature-button">Back to Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="comparison.js"></script>
+</body>
+</html>
